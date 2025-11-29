@@ -1,17 +1,100 @@
 
-
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #abacf1;
+}
 
 
 h1 {
-    color: black;
+    color: rgb(22, 22, 22);
     font-family: 'Press Start 2P', sans-serif;
     text-align: center;
     margin-top: 20px;
 }
 
-p {
-    color: black;
+
+.first_par {
+    color: rgb(22, 22, 22);
     font-family: 'Press Start 2P', sans-serif;
     text-align: center;
     margin: 10px 20px;
+}
+
+
+
+
+table {
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: auto;
+    table-layout: fixed;
+    
+}
+
+table input[type="number"] {
+    width: 70%; /* Forziamo l'input a riempire completamente la larghezza della cella */
+    box-sizing: border-box; /* Molto importante: include padding e border nel 100% della larghezza */
+}
+
+th, td {
+            width: 25%;
+            border: 3px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            
+        }
+
+
+form#user-info-form {
+  margin-top: 2vh;
+  max-width: 400px;
+  width: 100%;
+  border: 3px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(22, 22, 22);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
