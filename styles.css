@@ -7,20 +7,27 @@ body {
 }
 
 
+
 h1 {
-    color: rgb(22, 22, 22);
+    color: black;
     font-family: 'Press Start 2P', sans-serif;
+    font-size: 24px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5dvh;
+    width: auto;
 }
 
 
 .first_par {
-    color: rgb(22, 22, 22);
+    color: black;
     font-family: 'Press Start 2P', sans-serif;
+    font-size: 2dvh;
     text-align: center;
-    margin: 10px 20px;
+    width: 60%;
+    
+    margin: 1dvh auto 0; /* 10 sopra, auto dx/sx, 0 sotto. Centro orizzontalmente */
 }
+
 
 
 
@@ -32,18 +39,19 @@ table {
     border-collapse: collapse;
     width: auto;
     table-layout: fixed;
-    
+    font-family: 'Public Pixel', sans-serif;
+    font-size: 12px;
 }
 
 table input[type="number"] {
-    width: 70%; /* Forziamo l'input a riempire completamente la larghezza della cella */
-    box-sizing: border-box; /* Molto importante: include padding e border nel 100% della larghezza */
+    width: 70%; /* Forziamo l'input a riempire il 70% della larghezza della cella */
+    padding: 3px;
 }
 
 th, td {
             width: 25%;
             border: 3px solid #ddd;
-            padding: 8px;
+            padding: 3px 3px;
             text-align: center;
             
         }
@@ -51,37 +59,50 @@ th, td {
 
 form#user-info-form {
   margin-top: 2vh;
-  max-width: 400px;
+  max-width: 350px;
   width: 100%;
   border: 3px solid #ddd;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Public Pixel', sans-serif;
+  font-size: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .form-row {
   display: flex;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .form-group {
   flex: 1;
 }
 
-input, select {
+form#user-info-form input {
   width: 100%;
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
   box-sizing: border-box;
 }
+
+form#user-info-form select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 3px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
 
 input:focus, select:focus {
   border-color: #007BFF;
   outline: none;
 }
+
+
 
 button {
   padding: 10px 15px;
